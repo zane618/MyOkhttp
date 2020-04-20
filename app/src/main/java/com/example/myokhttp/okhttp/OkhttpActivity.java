@@ -1,4 +1,4 @@
-package com.example.myokhttp;
+package com.example.myokhttp.okhttp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.myokhttp.R;
 import com.example.myokhttp.util.Api;
 import com.example.myokhttp.util.RSAToolkit;
 import com.example.myokhttp.util.Util;
@@ -31,7 +32,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class MainActivity extends AppCompatActivity {
+public class OkhttpActivity extends AppCompatActivity {
 
     private static final String TAG = "OkhttpMainActivity";
     String url = "http://www.kuaidi100.com/query?type=shentong&postid=12341431431";
@@ -275,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        tv.setText(bytes.toString());
+                        tv.setText(string.toString());
                     }
                 });
             }
