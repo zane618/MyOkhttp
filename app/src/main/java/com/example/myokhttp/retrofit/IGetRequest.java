@@ -22,7 +22,4 @@ interface IGetRequest {
     @GET("query")
     Call<GetBean01> getCall01(@Query("type") String type,
                               @Query("postid") String postid);
-
-    @POST
-    Call<String>
 }
