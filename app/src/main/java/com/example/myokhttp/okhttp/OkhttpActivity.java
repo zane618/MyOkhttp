@@ -253,7 +253,7 @@ public class OkhttpActivity extends AppCompatActivity {
      * 有inputStream我们就可以通过IO的方式写文件
      */
     private void getRequest() {
-        //1.创建okhttpClinet帝乡
+        //1.创建okhttpClient
         OkHttpClient okHttpClient = new OkHttpClient();
         //2.创建REquest对象，设置一个url地址，设置请求方式
         final Request request = new Request.Builder().url(url).method("GET", null).build();
